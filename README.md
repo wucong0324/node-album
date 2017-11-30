@@ -17,6 +17,6 @@ npm install
 
 
 ## 技术栈
-- node+express
+- node+express+ejs
 - formidable(node上传插件)
 - es6（javascript核心规范）
