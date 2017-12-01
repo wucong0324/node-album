@@ -71,7 +71,7 @@ exports.postImg = function (req, res, next) {
         let time = +new Date();
         // let time = sd.format(new Date(), 'YYYYMMDDHHmmss');
         //获取文件扩展名
-        let extname = path.extname(files.picture.name);
+        let extname = path.extname(files.picture.name).toLowerCase();
         console.log(files);
         if(extname !== '.jpg' && extname !== '.png' && extname !== '.jpeg' && extname !== '.gif'){
             fs.unlink(files.picture.path, (err) => {
